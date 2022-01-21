@@ -6,7 +6,22 @@ class BlackAsh(Hardwood):
 
     material = 'Black Ash'
 
-    weight_per_board_foot = {
-        'rought': 40,
-        'fd': 32
-    }
+    attributes = {
+        'grade': {
+            'name': 'NHLA Grade',
+            'description': '',
+            'has_price': True,
+            'priority': 2,
+            'values': [
+                'Prime', 'COM/SEL', '#1 COM', '#2 COM', 
+            ]
+        },
+        'drying': {
+            'name': 'Drying',
+            'description': '',
+            'priority': 3,
+            'values': [
+                'Kiln Dried'
+            ]
+        }
+    ]
