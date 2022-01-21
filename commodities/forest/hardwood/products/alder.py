@@ -6,7 +6,16 @@ class Alder(Hardwood):
 
     material = 'Alder'
 
-    weight_per_board_foot = {
-        'rought': 40,
-        'fd': 32
-    } 
+    attributes = {
+        'thickness': {
+            'name': 'Thickness',
+            'description': '',
+            'has_price': True,
+            'priority': 1,
+            'values': [
+                '3/4', '4/4',
+            ]
+        }
+   ]
+        
+   excluded_attributes = ["color"]
